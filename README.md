@@ -14,6 +14,8 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+一个菜鸟前端
+
 <a href="https://github.com/clddup">
   <img align="center" alt="GitHub Stats" src="https://github-readme-stats.zohan.tech/api?username=clddup&show_icons=true&include_all_commits=tru" />
 </a>
