@@ -14,3 +14,9 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+<a href="https://github.com/clddup">
+  <img align="center" alt="GitHub Stats" src="https://github-readme-stats.zohan.tech/api?username=clddup&show_icons=true&include_all_commits=tru" />
+</a>
+<a href="https://github.com/clddup">
+  <img align="center" alt="Top Langs" src="https://github-readme-stats.zohan.tech/api/top-langs/?username=clddup&layout=compact" />
+</a>
