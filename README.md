@@ -22,3 +22,5 @@ Here are some ideas to get you started:
 <a href="https://github.com/clddup">
   <img align="center" alt="Top Langs" src="https://github-readme-stats.zohan.tech/api/top-langs/?username=clddup&layout=compact" />
 </a>
+
+[![clddup's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=clddup&theme=minimal)](https://github.com/ashutosh00710/github-readme-activity-graph)
