@@ -17,7 +17,7 @@ Here are some ideas to get you started:
 一个菜鸟前端
 
 <a href="https://github.com/clddup">
-  <img align="center" alt="GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=vanyongqi&show_icons=true&theme=transparent" />
+  <img align="center" alt="GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=clddup&show_icons=true&theme=transparent" />
 </a>
 <a href="https://github.com/clddup">
   <img align="center" alt="Top Langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=clddup&layout=compact" />
