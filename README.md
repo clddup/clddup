@@ -1,26 +1,31 @@
 ## Hi there 👋
 
-<!--
-**clddup/clddup** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+一个菜鸟前端 👨‍💻  
+有时喜欢东, 有时喜欢西, 有时喜欢躺着!!!
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
-一个菜鸟前端
+<p align="center">
+  <a href="https://github.com/clddup">
+    <img
+      height="165"
+      src="https://github-readme-stats-kohl-two-59.vercel.app/api?username=clddup&bg_color=ffffff00&text_color=666666&hide=contribs&show_icons=true&rank_icon=github&locale=cn"
+    />
+  </a>
+  <a href="https://github.com/clddup">
+    <img
+      height="165"
+      src="https://github-readme-stats-kohl-two-59.vercel.app/api/top-langs/?username=clddup&layout=compact&bg_color=ffffff00&text_color=666666&locale=cn"
+    />
+  </a>
+</p>
 
-<a href="https://github.com/clddup">
-  <img align="center" alt="GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=clddup&show_icons=true&theme=transparent" />
-</a>
-<a href="https://github.com/clddup">
-  <img align="center" alt="Top Langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=clddup&layout=compact" />
-</a>
+---
 
-[![clddup's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=clddup&theme=minimal)](https://github-readme-activity-graph.vercel.app/graph?username=clddup&theme=minimal)
+<p align="center">
+  <a href="https://github.com/clddup">
+    <img
+      src="https://github-readme-activity-graph.vercel.app/graph?username=clddup&theme=minimal"
+    />
+  </a>
+</p>
