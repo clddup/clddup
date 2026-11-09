@@ -22,8 +22,15 @@
 
 <p align="center">
   <a href="https://github.com/clddup">
-    <img
-      src="https://github-readme-activity-graph.vercel.app/graph?username=clddup&theme=minimal"
-    />
+    <picture>
+      <source
+        media="(prefers-color-scheme: dark)"
+        srcset="https://raw.githubusercontent.com/clddup/clddup/output/github-snake-dark.svg"
+      />
+      <img
+        src="https://raw.githubusercontent.com/clddup/clddup/output/github-snake.svg"
+        alt="GitHub 贡献图贪吃蛇动画"
+      />
+    </picture>
   </a>
 </p>
