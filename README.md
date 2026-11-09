@@ -7,14 +7,28 @@
 
 <p align="center">
   <a href="https://github.com/clddup">
-    <img
-      src="https://github-readme-stats-kohl-two-59.vercel.app/api?username=clddup&bg_color=ffffff00&text_color=666666&hide=contribs&show_icons=true&rank_icon=github&locale=cn"
-    />
+    <picture>
+      <source
+        media="(prefers-color-scheme: dark)"
+        srcset="https://github-readme-stats-kohl-two-59.vercel.app/api?username=clddup&theme=dark&bg_color=00000000&hide_border=true&hide=contribs&show_icons=true&rank_icon=github&locale=cn"
+      />
+      <img
+        src="https://github-readme-stats-kohl-two-59.vercel.app/api?username=clddup&theme=default&bg_color=00000000&hide_border=true&hide=contribs&show_icons=true&rank_icon=github&locale=cn"
+        alt="GitHub 统计"
+      />
+    </picture>
   </a>
   <a href="https://github.com/clddup">
-    <img
-      src="https://github-readme-stats-kohl-two-59.vercel.app/api/top-langs/?username=clddup&layout=compact&bg_color=ffffff00&text_color=666666&locale=cn"
-    />
+    <picture>
+      <source
+        media="(prefers-color-scheme: dark)"
+        srcset="https://github-readme-stats-kohl-two-59.vercel.app/api/top-langs/?username=clddup&layout=donut&theme=dark&bg_color=00000000&hide_border=true&locale=cn"
+      />
+      <img
+        src="https://github-readme-stats-kohl-two-59.vercel.app/api/top-langs/?username=clddup&layout=donut&theme=default&bg_color=00000000&hide_border=true&locale=cn"
+        alt="GitHub 常用语言"
+      />
+    </picture>
   </a>
 </p>
 
