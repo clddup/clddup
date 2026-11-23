@@ -39,11 +39,11 @@
     <picture>
       <source
         media="(prefers-color-scheme: dark)"
-        srcset="https://raw.githubusercontent.com/clddup/clddup/output/github-snake-dark.svg"
+        srcset="https://raw.githubusercontent.com/clddup/clddup/breakout-output/breakout-dark.svg"
       />
       <img
-        src="https://raw.githubusercontent.com/clddup/clddup/output/github-snake.svg"
-        alt="GitHub 贡献图贪吃蛇动画"
+        src="https://raw.githubusercontent.com/clddup/clddup/breakout-output/breakout-light.svg"
+        alt="GitHub 贡献打砖块动画"
       />
     </picture>
   </a>
