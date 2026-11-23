@@ -1,0 +1,57 @@
+name: Generate contribution breakout
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: contribution-breakout
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
+        with:
+          persist-credentials: false
+
+      - name: Fetch the contribution calendar and generate SVGs
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PROFILE: ${{ github.repository_owner }}
+        run: |
+          for attempt in 1 2 3; do
+            if gh api graphql \
+              -f 'query=query($login: String!) {
+                user(login: $login) {
+                  contributionsCollection {
+                    contributionCalendar {
+                      totalContributions
+                      weeks { contributionDays { date weekday contributionCount contributionLevel } }
+                    }
+                  }
+                }
+              }' \
+              -f login="$PROFILE" \
+              --jq '{calendar: .data.user.contributionsCollection.contributionCalendar}' \
+              > "$RUNNER_TEMP/contributions.json"; then
+              break
+            fi
+            if [ "$attempt" -eq 3 ]; then exit 1; fi
+            sleep "$((attempt * 2))"
+          done
+          python3 scripts/generate_breakout_preview.py "$RUNNER_TEMP/contributions.json" dist --images-only
+
+      - name: Publish animations to the breakout-output branch
+        uses: crazy-max/ghaction-github-pages@df5cc2bfa78282ded844b354faee141f06b41865 # v4.2.0
+        with:
+          target_branch: breakout-output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
