@@ -17,36 +17,8 @@ jobs:
       contents: write
 
     steps:
-      - uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
-        with:
-          persist-credentials: false
-
-      - name: Fetch the contribution calendar and generate SVGs
-        env:
-          GH_TOKEN: ${{ github.token }}
-          PROFILE: ${{ github.repository_owner }}
-        run: |
-          for attempt in 1 2 3; do
-            if gh api graphql \
-              -f 'query=query($login: String!) {
-                user(login: $login) {
-                  contributionsCollection {
-                    contributionCalendar {
-                      totalContributions
-                      weeks { contributionDays { date weekday contributionCount contributionLevel } }
-                    }
-                  }
-                }
-              }' \
-              -f login="$PROFILE" \
-              --jq '{calendar: .data.user.contributionsCollection.contributionCalendar}' \
-              > "$RUNNER_TEMP/contributions.json"; then
-              break
-            fi
-            if [ "$attempt" -eq 3 ]; then exit 1; fi
-            sleep "$((attempt * 2))"
-          done
-          python3 scripts/generate_breakout_preview.py "$RUNNER_TEMP/contributions.json" dist --images-only
+      - name: Generate light and dark SVGs
+        uses: clddup/contribution-breakout@47e4427f141debff3dc1f81285bcec0619f3dd01 # v0.1.0
 
       - name: Publish animations to the breakout-output branch
         uses: crazy-max/ghaction-github-pages@1d6ee9b181a81033a16bd707a1401afa978daab4 # v5.0.0
